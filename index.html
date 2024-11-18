@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle do Verduras</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Controle do Verduras</h1>
+    <nav>
+      <button id="btnEstoque">Estoque</button>
+      <button id="btnFinancas">Finanças</button>
+    </nav>
+  </header>
+
+  <main id="estoque">
+    <h2>Estoque</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Unidade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="estoqueBody">
+        <!-- Linhas dinâmicas aqui -->
+      </tbody>
+    </table>
+    <button id="btnAddProduto">Adicionar Produto</button>
+  </main>
+
+  <main id="financas" style="display: none;">
+    <h2>Finanças</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody id="financasBody">
+        <!-- Linhas dinâmicas aqui -->
+      </tbody>
+    </table>
+    <button id="btnAddFinanceiro">Adicionar Registro</button>
+    <section>
+      <h3>Resumo</h3>
+      <p>Total Entradas: <span id="totalEntradas">R$ 0,00</span></p>
+      <p>Total Saídas: <span id="totalSaidas">R$ 0,00</span></p>
+      <p>Saldo Atual: <span id="saldoAtual">R$ 0,00</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
